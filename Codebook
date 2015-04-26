@@ -143,17 +143,12 @@ tGravityAccMag-mean(): number
 tGravityAccMag-std(): number
 	Mean of standard deviation Magnitude, calculated using the Enclidian Norm, of Gravity acceleration signal came from Accelerometer in the time domain measure by subject by activity
 
-tBodyAccJerkMag-mean(): number
-tBodyAccJerkMag-std(): number
-
 tBodyGyroMag-mean(): number
 	Mean of mean Magnitude, calculated using the Enclidian Norm, of Bory acceleration signal came from Gyroscope in the time domain measure by subject by activity
 
 tBodyGyroMag-std(): number
 	Mean of standard deviation Magnitude, calculated using the Enclidian Norm, of Bory acceleration signal came from Gyroscope in the time domain measure by subject by activity
 
-tBodyGyroJerkMag-mean(): number
-tBodyGyroJerkMag-std(): number
 
 fBodyAcc-mean()-X: number
 	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
@@ -181,6 +176,14 @@ fBodyAcc-meanFreq()-Y: number
 
 fBodyAcc-meanFreq()-Z: number
 	Mean of all mean frequency of Body acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity
+
+
+THE FOLLOWING VARIABLES HAVE THE SAME PRINCIPLES APPLIED ABOVE
+
+tBodyAccJerkMag-mean(): number
+tBodyAccJerkMag-std(): number
+tBodyGyroJerkMag-mean(): number
+tBodyGyroJerkMag-std(): number
 fBodyAccJerk-mean()-X: number
 fBodyAccJerk-mean()-Y: number
 fBodyAccJerk-mean()-Z: number
