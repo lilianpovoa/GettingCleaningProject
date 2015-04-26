@@ -51,12 +51,12 @@ The data are divided into to folders, train and test, containgin training and te
 
 All file are loaded separately into variables according to the kind of data set (train or test) and the type of information (X, Y or subject)
 
-# loading the training files
+loading the training files
 train.X<-read.table( "UCI HAR Dataset/train/X_train.txt")
 train.Y<-read.table("UCI HAR Dataset/train/Y_train.txt")
 train.subject<-read.table("UCI HAR Dataset/train/subject_train.txt")
 
-# loading the test files
+loading the test files
 test.X<-read.table("UCI HAR Dataset/test/X_test.txt")
 test.Y<-read.table("UCI HAR Dataset/test/Y_test.txt")
 test.subject<-read.table("UCI HAR Dataset/test/subject_test.txt")
@@ -65,7 +65,7 @@ The mail folder also contains one file that describes the activity label for eac
 
 This files are also loaded into data frames for posterior use.
 
-# loading de labels files
+loading de labels files
 activity_labels<-read.table("UCI HAR Dataset/activity_labels.txt") #all activity labels (SITTING, STADING)
 features_label<-read.table("UCI HAR Dataset/features.txt") #all faeture labels
 
@@ -75,16 +75,16 @@ features_label<-read.table("UCI HAR Dataset/features.txt") #all faeture labels
 
 As the information are divided into 3 different files for each kind of data, train or test, all the information of subjects, features and activities are loaded into one variable
 
-# binding the training and testing files
+binding the training and testing files
 X<-rbind(test.X,train.X)
 Y<-rbind(test.Y,train.Y)
 subject<-rbind(test.subject,train.subject)
 
 Labeling the column names of the data frames appropriately. De Y data frame contains one column called "Activity_Id", the subject one column called "Subject" and the X contains several columns, named according to te features_label data frame. The data frame activity_labels contains 2 columns, Activity_Id and Activity_Label
 
-# Giving the appropriated columns names
+Giving the appropriated columns names
 colnames(X)<-features_label$V2  #data.frame X contains the measurements taken from test and training data sets
-#the X columns names are described in the features_labels data frame
+the X columns names are described in the features_labels data frame
 colnames(Y)<-"Activity_Id" #data.frame Y contains the activity id information from test and training data sets
 colnames(subject)<-"Subject"  #data.frame subject contains the subject information from test and training data sets
 colnames(activity_labels)<-c("Activity_Id","Activity_Label") #labels the
@@ -116,7 +116,7 @@ FinalData<-select(FinalData,-Activity_Id) #exclude the Activity_Id information s
 
 The needed data about the data set is the mean of each feature that has mean or std information per Subject and Activity_label. Then the data frame is grouped by Subject and Activity_label creating the GroupedBy data frame.
 
-# analyzing the FinalData and calculating the summary of all columns that contain mean and std information
+analyzing the FinalData and calculating the summary of all columns that contain mean and std information
 GroupedBy<-group_by(FinalData,Subject,Activity_Label) #group the data frame by Subject and Activity label
 
 Then the grouped information is summarized with the mean of each columns that contains a feature data. Since the information is already grouped, as sow in the previous step, the resulted summary is calculated per Subject and Activity_label
@@ -128,4 +128,4 @@ The resultant data frame are show after running the script as a table in R. The 
 MAINTAINERS
 ----------------------
 Current maintainers:
- * Lilian Povoa  - lilian.povoa@gmail.com
+ Lilian Povoa  - lilian.povoa@gmail.com
