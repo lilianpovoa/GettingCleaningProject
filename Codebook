@@ -1,0 +1,213 @@
+		DATA DICTIONARY – SUMMARIZED TRAIN AND TEST 
+
+
+Subject: integer
+	
+	Number from 1 to 30 representing the subject analyzed
+
+Activity_Label: Factor with 6 levels
+
+	Activity analyzed as above
+	1. WALKING
+	2. WALKING_UPSTAIRS
+	3. WALKING_DOWNSTAIRS
+	4. SITTING
+	5. STANDING
+	6. LAYING
+
+	
+	The following columns have the mean of the features described For the following columns the information below must be considered:
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+
+Pattern to describe the following column measures
+
+ t - 't' to denote time
+ f – Indicate when a Fast Fourier Transform (FFT) was applied to the signals
+ Acc – Data come from accelerometer 
+ Gyro – Data come from Gyroscope
+ Body – Body acceleration Signal
+ Gravity – Gravity acceleration signal	
+ Jerk – Jerk Signals
+ Mag - Magnitude of these three-dimensional signals calculated using the         Euclidean norm 
+ Mean - Mean
+ Std – Standard deviation
+ FreqMean – Frequency Mean
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
+tBodyAcc-mean()-X: number
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+tBodyAcc-mean()-Y: number
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+tBodyAcc-mean()-Z: number
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+
+tBodyAcc-std()-X: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+
+tBodyAcc-std()-Y: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+tBodyAcc-std()-Z: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity	
+
+tGravityAcc-mean()-X: number
+	Mean of all mean Gravity acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+	
+tGravityAcc-mean()-Y: number
+	Mean of all mean Gravity acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+tGravityAcc-mean()-Z: number
+	Mean of all mean Gravity acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity	
+
+tGravityAcc-std()-X: number
+	Mean of all stand deviation Gravity acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+
+tGravityAcc-std()-Y: number
+	Mean of all stand deviation Gravity acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+tGravityAcc-std()-Z: number
+	Mean of all stand deviation Gravity acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity
+
+tBodyAccJerk-mean()-X: number
+	Mean of all mean Body acceleration signal came from Accelerometer, considering the X axis, derived on time to obtain Jerk signal  measure by subject by activity
+
+tBodyAccJerk-mean()-Y: number
+	Mean of all mean Body acceleration signal came from Accelerometer, considering the Y axis, derived on time to obtain Jerk signal  measure by subject by activity
+
+tBodyAccJerk-mean()-Z: number
+	Mean of all mean Body acceleration signal came from Accelerometer, considering the Z axis, derived on time to obtain Jerk signal  measure by subject by activity
+
+tBodyAccJerk-std()-X: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer, considering the X axis, derived on time to obtain Jerk signal  measure by subject by activity
+
+tBodyAccJerk-std()-Y: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer, considering the Y axis, derived on time to obtain Jerk signal
+
+tBodyAccJerk-std()-Z: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer, considering the Z axis, derived on time to obtain Jerk signal  measure by subject by activity
+
+tBodyGyro-mean()-X: number
+	Mean of all mean Body acceleration signal came from Gyroscope in the time domain and X axis measure by subject by activity	
+
+tBodyGyro-mean()-Y: number
+	Mean of all mean Body acceleration signal came from Gyroscope in the time domain and Y axis measure by subject by activity
+
+tBodyGyro-mean()-Z: number
+	Mean of all mean Body acceleration signal came from Gyroscope in the time domain and Z axis measure by subject by activity
+
+tBodyGyro-std()-X: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope in the time domain and X axis measure by subject by activity
+
+tBodyGyro-std()-Y: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope in the time domain and Y axis measure by subject by activity
+
+tBodyGyro-std()-Z: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope in the time domain and Z axis measure by subject by activity
+
+tBodyGyroJerk-mean()-X: number
+	Mean of all mean Body acceleration signal came from Gyroscope, considering the X axis, derived on time to obtain Jerk signal
+
+tBodyGyroJerk-mean()-Y: number
+	Mean of all mean Body acceleration signal came from Gyroscope, considering the Y axis, derived on time to obtain Jerk signal
+
+tBodyGyroJerk-mean()-Z: number
+	Mean of all mean Body acceleration signal came from Gyroscope, considering the Z axis, derived on time to obtain Jerk signal
+
+tBodyGyroJerk-std()-X: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope, considering the X axis, derived on time to obtain Jerk signal
+
+tBodyGyroJerk-std()-Y: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope, considering the Y axis, derived on time to obtain Jerk signal
+
+tBodyGyroJerk-std()-Z: number
+	Mean of all standard deviation Body acceleration signal came from Gyroscope, considering the Z axis, derived on time to obtain Jerk signal
+
+tBodyAccMag-mean(): number
+	Mean of all mean Magnitude, calculated using the Enclidian Norm, of Body acceleration signal came from Accelerometer in the time domain measure by subject by activity	 
+
+tBodyAccMag-std(): number
+	Mean of all standard deviation Magnitude, calculated using the Enclidian Norm, of Body acceleration signal came from Accelerometer in the time domain measure by subject by activity	 
+
+tGravityAccMag-mean(): number
+	Mean of all mean Magnitude, calculated using the Enclidian Norm, of Gravity acceleration signal came from Accelerometer in the time domain measure by subject by activity
+
+tGravityAccMag-std(): number
+	Mean of standard deviation Magnitude, calculated using the Enclidian Norm, of Gravity acceleration signal came from Accelerometer in the time domain measure by subject by activity
+
+tBodyAccJerkMag-mean(): number
+tBodyAccJerkMag-std(): number
+
+tBodyGyroMag-mean(): number
+	Mean of mean Magnitude, calculated using the Enclidian Norm, of Bory acceleration signal came from Gyroscope in the time domain measure by subject by activity
+
+tBodyGyroMag-std(): number
+	Mean of standard deviation Magnitude, calculated using the Enclidian Norm, of Bory acceleration signal came from Gyroscope in the time domain measure by subject by activity
+
+tBodyGyroJerkMag-mean(): number
+tBodyGyroJerkMag-std(): number
+
+fBodyAcc-mean()-X: number
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+
+fBodyAcc-mean()-Y: number
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+fBodyAcc-mean()-Z: number	
+	Mean of all mean Body acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity	
+
+fBodyAcc-std()-X: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity	
+
+fBodyAcc-std()-Y: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity	
+
+fBodyAcc-std()-Z: number
+	Mean of all standard deviation Body acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity	
+
+fBodyAcc-meanFreq()-X: number
+	Mean of all mean frequency of Body acceleration signal came from Accelerometer in the time domain and X axis measure by subject by activity
+
+fBodyAcc-meanFreq()-Y: number
+	Mean of all mean frequency of Body acceleration signal came from Accelerometer in the time domain and Y axis measure by subject by activity
+
+fBodyAcc-meanFreq()-Z: number
+	Mean of all mean frequency of Body acceleration signal came from Accelerometer in the time domain and Z axis measure by subject by activity
+fBodyAccJerk-mean()-X: number
+fBodyAccJerk-mean()-Y: number
+fBodyAccJerk-mean()-Z: number
+fBodyAccJerk-std()-X: number
+fBodyAccJerk-std()-Y: number
+fBodyAccJerk-std()-Z: number
+fBodyAccJerk-meanFreq()-X: number
+fBodyAccJerk-meanFreq()-Y: number
+fBodyAccJerk-meanFreq()-Z: number
+fBodyGyro-mean()-X: number
+fBodyGyro-mean()-Y: number
+fBodyGyro-mean()-Z: number
+fBodyGyro-std()-X: number
+fBodyGyro-std()-Y: number
+fBodyGyro-std()-Z: number: 
+fBodyGyro-meanFreq()-X: number
+fBodyGyro-meanFreq()-Y: number
+fBodyGyro-meanFreq()-Z: number
+fBodyAccMag-mean(): number
+fBodyAccMag-std(): number
+fBodyAccMag-meanFreq(): number
+fBodyBodyAccJerkMag-mean(): number
+fBodyBodyAccJerkMag-std(): number
+fBodyBodyAccJerkMag-meanFreq(): number
+fBodyBodyGyroMag-mean(): number
+fBodyBodyGyroMag-std(): number
+fBodyBodyGyroMag-meanFreq(): number
+fBodyBodyGyroJerkMag-mean(): number
+fBodyBodyGyroJerkMag-std(): number
+fBodyBodyGyroJerkMag-meanFreq(): number
