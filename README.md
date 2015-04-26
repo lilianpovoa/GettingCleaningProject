@@ -106,7 +106,7 @@ Using the Activity_Id as an index, the Activity_Label is merged into  FinalData
 
 FinalData<-merge(FinalData,activity_labels) #merge the data frames to change the activity id putting the activity label information
 
-Since the Activity_Id and Activity_label contains the same information, represented by a numeral or a string, the Activity_Id was eliminated from FinalData, obtaining a TIDY data set, where which columns has a independent variable and each rom an observation
+Since the Activity_Id and Activity_label contains the same information, represented by a numeral or a string, the Activity_Id was eliminated from FinalData, obtaining a TIDY data set, where each columns has a independent variable and each rom an observation
 
 FinalData<-select(FinalData,-Activity_Id) #exclude the Activity_Id information since the data frame already contains de activity label information
 
